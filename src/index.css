@@ -1,0 +1,14 @@
+/* fragment */
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap");
+/* major mono display */
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Fragment Mono", monospace;
+  }
+}
