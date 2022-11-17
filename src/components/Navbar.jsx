@@ -25,8 +25,8 @@ const Navbar = () => {
 
     return (
         <>
-            {/* <div className=" flex justify-between items-center w-full h-20 px-4 hover:backdrop-blur-sm z-20 fixed"></div> */}
-            <div className=" flex justify-between items-center w-full h-20 px-4 text-white backdrop-blur-[3px] z-20 duration-200 border-b border-gray-700 fixed">
+            {/* <div className=" flex justify-between items-center w-full h-20 px-4 z-10 fixed bg-black mix-blend-color-burn"></div> */}
+            <div className=" flex justify-between items-center w-full h-20 px-4 text-white backdrop-blur-[3px] z-20 duration-200 border-b border-gray-700 fixed ">
                 <div>
                     <h1 className=" text-4xl font-majormono ml-2">Faihaan</h1>
                 </div>
