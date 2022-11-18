@@ -5,7 +5,8 @@ const About = () => {
         <>
             <h1 className=" text-3xl md:text-6xl">&lt; About Me /&gt;</h1>
             <h2 className=" py-10 text-xl">
-                Hey there, I'm <span className="  italic">Faihaan</span>. I'm a
+                Hi there, I'm{" "}
+                <span className=" border-b border-dashed">Faihaan</span>. I'm a
                 student currently studying at{" "}
                 <span className=" text-orange-600 duration-150">
                     Oregon State University
