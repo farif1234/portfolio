@@ -5,7 +5,7 @@ import Socials from "./Socials";
 const Home = () => {
     return (
         <div
-            name="home"
+            name="about"
             className=" h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white "
         >
             <div className=" max-w-screen-lg md:mx-auto flex flex-col items-center justify-center h-full px-8 md:px-4 in ">

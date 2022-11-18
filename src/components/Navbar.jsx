@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const links = [
         {
             id: 1,
-            link: "home",
-        },
-        {
-            id: 2,
             link: "about",
         },
         {
-            id: 3,
+            id: 2,
             link: "projects",
         },
         {
-            id: 4,
-            link: "experience",
+            id: 3,
+            link: "skills",
         },
     ];
 
@@ -35,9 +32,17 @@ const Navbar = () => {
                     {links.map(({ id, link }) => (
                         <li
                             key={id}
-                            className=" px-4 text-lg cursor-pointer font-medium capitalize text-gray-500 hover:scale-105 hover:text-gray-200 duration-200"
+                            className=" px-4 text-lg cursor-pointer font-medium capitalize text-gray-500 hover:scale-105 hover:text-gray-200 duration-200 "
                         >
-                            {link}
+                            <Link
+                                to={link}
+                                spy
+                                smooth
+                                duration={500}
+                                offset={link == "projects" ? -100 : 0}
+                            >
+                                {link}
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -55,7 +60,15 @@ const Navbar = () => {
                                 key={id}
                                 className=" px-4 cursor-pointer capitalize py-6 text-4xl"
                             >
-                                {link}
+                                <Link
+                                    onClick={() => setNav(!nav)}
+                                    to={link}
+                                    smooth
+                                    duration={500}
+                                    offset={link == "projects" ? -100 : 0}
+                                >
+                                    {link}
+                                </Link>
                             </li>
                         ))}
                     </ul>
