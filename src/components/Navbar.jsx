@@ -25,7 +25,9 @@ const Navbar = () => {
             {/* <div className=" flex justify-between items-center w-full h-20 px-4 z-10 fixed bg-black mix-blend-color-burn"></div> */}
             <div className=" flex justify-between items-center w-full h-20 px-4 text-white backdrop-blur-[3px] z-20 duration-200 border-b border-gray-700 fixed ">
                 <div>
-                    <h1 className=" text-4xl font-majormono ml-2">Faihaan</h1>
+                    <h1 className=" text-xl  ml-2 italic text-gray-500 hover:text-white">
+                        Faihaan Arif
+                    </h1>
                 </div>
 
                 <ul className="hidden md:flex">
@@ -36,7 +38,6 @@ const Navbar = () => {
                         >
                             <Link
                                 to={link}
-                                spy
                                 smooth
                                 duration={500}
                                 offset={link == "projects" ? -100 : 0}
