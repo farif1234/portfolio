@@ -35,9 +35,7 @@ const Projects = () => {
                                             {title}
                                         </h3>
                                         <p
-                                            className={` py-1 text-[0px] text-gray-400 md:text-xs ${
-                                                id > 4 && "mb-4"
-                                            } `}
+                                            className={` py-1 text-[0px] text-gray-400 md:text-xs pb-4`}
                                         >
                                             {desc}
                                         </p>
