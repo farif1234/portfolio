@@ -10,7 +10,7 @@ const Socials = () => {
             <a href="https://github.com/farif1234">
                 <FiGithub className={link} size={40} />
             </a>
-            <a href="https://www.linkedin.com/in/faihaan-arif-3020b117a/">
+            <a href="https://www.linkedin.com/in/faihaan-arif">
                 <FiLinkedin className={link} size={40} />
             </a>
             <a href="mailto:farif1234@gmail.com">
